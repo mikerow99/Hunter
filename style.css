@@ -1,11 +1,8 @@
-* { margin: 0px; }
+body { margin: 0px; padding: 0px; background: url(images/background.jpeg); }
 
-body { background: url(images/background.jpeg); }
-
-#window { display:block; margin: 0px auto; width: 800px; }
-#stats{ display:block; height: 30px; background: #3d3d3d; line-height: 30px; color: orange; font-family: Arial; font-size:15px;  text-shadow: 1px 0px 0px #000; border-radius: 0px 0px 10px 10px; }
-#score{ display:inline; margin-left: 5px; width: 200px;  color: green ;  }
-#points { display:inline; color: white; }
+#stats{  margin: 0px auto;display:block; height: 30px; width: 800px; background: #3d3d3d; line-height: 30px; color: orange; font-family: Arial; font-size:15px;  text-shadow: 1px 0px 0px #000; border-radius: 0px 0px 10px 10px; }
+#score{ display:inline; margin-left: 5px;  text-align: center;width: 200px;  color: green ;  }
+#points { display:inline; color: white;  }
 .monster { width: 44px; height: 58px; position: absolute; background: url('monsters/monster6_64.gif') no-repeat; -webkit-animation: monsterMove 10s infinite; -moz-animation: monsterMove 10s infinite; }
 .version { margin-right: 5px;  float: right; }
 

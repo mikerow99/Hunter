@@ -9,9 +9,10 @@
 <body onload="addMonster( 3 )">
   <audio autoplay loop src="sounds/1576.mp3" id="bgMusic"></audio>
   <div id="status_bar">
-    <div id="version">Developer Preview <script type="text/javascript">document.write( version );</script></div>
     <div id="score">Score: </div>
     <div id="points">0</div>
+    <div id="sound" class="unmute" onclick="soundControl()"></div>
+    <div id="version">Developer Preview <script type="text/javascript">document.write( version );</script></div>
   </div>
 </body>
 </html>

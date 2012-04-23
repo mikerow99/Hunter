@@ -1,5 +1,3 @@
-Hunter is a simply game, to run open index.html in browser.
+The Hunter is a simply game using HTML5/CSS3 and Javascript.
 Supported browser:
-Google Chrome [X]
-Firefox [Partial]
-======
+<br /><b>Google Chrome [X]</b>

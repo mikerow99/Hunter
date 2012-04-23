@@ -1,6 +1,7 @@
+//Game
 var a = 0;
 var b = 0;
-var version = '0.2.1';
+var version = '0.2.2';
 function addMonster ( value ) {
   for( var i = 1; i <= value; i++ ) {
     var monster = document.createElement('div');
@@ -26,4 +27,16 @@ function addPoints ( ) {
     alert('Next level ... 2');
   }
   document.getElementById('points').innerHTML = points;
+}
+//Options
+function soundControl( ) {
+  var sound_status = document.getElementById('bgMusic').muted;
+  var sound_icon = document.getElementById('sound');
+  if( !sound_status ) {
+    document.getElementById('bgMusic').muted = true;
+    sound_icon.className="mute";
+  } else {
+    document.getElementById('bgMusic').muted = false;
+    sound_icon.className="unmute";
+  }
 }

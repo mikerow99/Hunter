@@ -1,12 +1,18 @@
-body { margin: 0px; background: url('images/background.jpeg'); color: orange; font-family: Arial; font-size:15px;  text-shadow: 1px 0px 0px #000; }
+body { margin: 0px; background: url('images/background.jpg'); color: orange; font-family: Arial; font-size: 15px; text-shadow: 1px 0px 0px #000; }
 
-#status_bar{ display: block; margin: 0px auto; width: 800px; height: 30px; background: #3d3d3d; line-height: 30px; border-radius: 0px 0px 10px 10px; }
-#score{ display: inline; margin-left: 5px; width: 200px; color: green; }
-#points { display:inline; color: white; }
+#status_bar{ display: block; margin: 0px auto; width: 800px; height: 32px; opacity:0.6; background: #000; text-align: center; line-height: 32px; border-radius: 0px 0px 10px 10px; }
+#score{ display: inline; margin-left: 150px; width: 20px; font-size: 24px; color: green; }
+#points { display: inline; color: white; font-size: 24px;}
+#lifes { display: inline; float: left; margin-left: 5px; width: 32px; height: 32px; background: url('images/heart.png') repeat-x; }
 #version { display: inline; margin-right: 5px; float: right; }
 #sound { display: inline; float: right; width: 32px; height: 32px; }
+#level { display: block;  visibility: hidden; color: white; font-size: 72px; text-align: center; }
 
-.monster { display: block; width: 44px; height: 58px; position: absolute; background: url('monsters/monster6_64.gif') no-repeat; -webkit-animation: monsterMove 20s infinite; }
+.husky { width: 30px; height: 51px; position: absolute; background: url('monsters/husky.gif') no-repeat; -webkit-animation: monsterMove 20s infinite; }
+.squirrel { width: 64px; height: 64px; position: absolute; background: url('monsters/squirrel.gif') no-repeat; -webkit-animation: monsterMove 10s infinite; }
+.troll { width: 38px; height: 32px; position: absolute; background: url('monsters/troll.gif') no-repeat; -webkit-animation: monsterMove 10s infinite; }
+.islandtroll { width: 42px; height: 32px; position: absolute; background: url('monsters/islandtroll.gif') no-repeat; -webkit-animation: monsterMove 10s infinite; }
+
 .mute { display: inline; width: 32px; height: 32px; background: url('images/mute.png') no-repeat; }
 .unmute { display: inline; width: 32px; height: 32px; background: url('images/unmute.png') no-repeat; }
 

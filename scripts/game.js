@@ -1,6 +1,6 @@
 var a = 0;
 var b = 0;
-var version = 'Developer Preview 0.3.0';
+var version = 'Developer Preview 0.3.1';
 function addMonster (value) {
   for(var i = 1; i <= value; i++) {
     monster = document.createElement('div');
@@ -22,10 +22,11 @@ function remove ( id ) {
 }
 function addPoints ( ) {
   score = parseInt(document.getElementById("points").innerHTML);
+  level = document.getElementById("level").innerHTML;
   points = score + 1;
-  if(points == 10) {
+  if(points == 10 || points == 20 || points == 30) {
     addMonster(1);
-    document.getElementById('level').innerHTML = '2';
+//    document.getElementById('level').innerHTML = '2';
   }
   document.getElementById('points').innerHTML = points;
 }

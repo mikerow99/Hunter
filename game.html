@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>The Hunter Game</title>  
+  <meta charset=utf-8" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="scripts/game.js"></script>
+  <script src="scripts/settings.js"></script>
+</head>
+<body onload="addMonster( 3 )">
+  <audio autoplay loop src="sounds/background.mp3" id="music"></audio>
+  <div id="status_bar">
+    <div id="score">Score: </div>
+    <div id="points">0</div>
+    <div id="lifes"></div>
+    <div id="sound" class="unmute" onclick="soundControl()"></div>
+    <div id="version"><script>document.write( version );</script></div>
+  </div>
+  <div id="level">1</div>
+</body>
+</html>

@@ -4,18 +4,24 @@
   <title>The Hunter Game</title>  
   <meta charset=utf-8" />
   <link rel="stylesheet" href="style.css" />
-  <script src="scripts/game.js"></script>
-  <script src="scripts/settings.js"></script>
+  <!-- Need new scrupt -->
+  <script type = "text/javascript"> 
+   function exit(){ 
+        window.open('','_self',''); 
+        window.close(); 
+   }
+</script> 
+<!--Soon other scripts <script src="scripts/game.js"></script>-->
 </head>
-<body onload="addMonster( 3 )">
-  <audio autoplay loop src="sounds/background.mp3" id="music"></audio>
-  <div id="status_bar">
-    <div id="score">Score: </div>
-    <div id="points">0</div>
-    <div id="lifes"></div>
-    <div id="sound" class="unmute" onclick="soundControl()"></div>
-    <div id="version"><script>document.write( version );</script></div>
+<body>
+<!--Not yet for splash screen  <audio autoplay loop src="sounds/background.mp3" id="music"></audio>-->
+<div id="menu_window">
+  <div id="menu_options">
+    <div id="menu_buttons"><a href="game.html">Play</a></div>
+    <div id="menu_buttons">Highscore</div>
+    <div id="menu_buttons">Options</div>
+    <div id="menu_buttons"><a href="javascript:exit();">Close</a></div>
   </div>
-  <div id="level">1</div>
+</div>
 </body>
 </html>
